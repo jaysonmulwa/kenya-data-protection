@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="256" viewBox="0 0 760 256" role="img" aria-label="Checks passed">
+<rect width="760" height="256" rx="8" fill="#1a1a19"/>
+<text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#ffffff">Checks passed</text>
+<text x="24" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#c3c2b7">126 checks: 8 questions × 3 runs, scored by a blind grader. Claude Opus 5.5.</text>
+<line x1="210.0" y1="78" x2="210.0" y2="216" stroke="#3a3a37" stroke-width="1"/>
+<text x="210.0" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">0%</text>
+<line x1="317.5" y1="78" x2="317.5" y2="216" stroke="#3a3a37" stroke-width="1"/>
+<text x="317.5" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">25%</text>
+<line x1="425.0" y1="78" x2="425.0" y2="216" stroke="#3a3a37" stroke-width="1"/>
+<text x="425.0" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">50%</text>
+<line x1="532.5" y1="78" x2="532.5" y2="216" stroke="#3a3a37" stroke-width="1"/>
+<text x="532.5" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">75%</text>
+<line x1="640.0" y1="78" x2="640.0" y2="216" stroke="#3a3a37" stroke-width="1"/>
+<text x="640.0" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#c3c2b7" text-anchor="middle">100%</text>
+<text x="196" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">With skill</text>
+<path d="M210,86 h419.2 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-419.2 z" fill="#3987e5"/>
+<text x="641.1746031746031" y="101" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">98.4%</text>
+<text x="196" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">Plain model</text>
+<path d="M210,130 h327.0 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-327.0 z" fill="#d95926"/>
+<text x="549.031746031746" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">77.0%</text>
+<text x="196" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">Plain model + ODPC web</text>
+<path d="M210,174 h357.7 a4,4 0 0 1 4,4 v12.0 a4,4 0 0 1 -4,4 h-357.7 z" fill="#199e70"/>
+<text x="579.7460317460318" y="189" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">84.1%</text>
+</svg>

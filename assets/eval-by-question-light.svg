@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" role="img" aria-label="Checks passed, by question">
+<rect width="760" height="460" rx="8" fill="#fcfcfb"/>
+<text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#0b0b0b">Checks passed, by question</text>
+<text x="24" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#52514e">Share of each question's checks passed across 3 runs. Exact counts are in the table below.</text>
+<rect x="24" y="72" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="42" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b">With skill</text>
+<rect x="132.0" y="72" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="150.0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b">Plain model</text>
+<rect x="247.2" y="72" width="12" height="12" rx="2" fill="#1baf7a"/>
+<text x="265.2" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b">Plain model + ODPC web</text>
+<line x1="250.0" y1="102" x2="250.0" y2="420" stroke="#e4e3df" stroke-width="1"/>
+<text x="250.0" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#52514e" text-anchor="middle">0%</text>
+<line x1="360.0" y1="102" x2="360.0" y2="420" stroke="#e4e3df" stroke-width="1"/>
+<text x="360.0" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#52514e" text-anchor="middle">25%</text>
+<line x1="470.0" y1="102" x2="470.0" y2="420" stroke="#e4e3df" stroke-width="1"/>
+<text x="470.0" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#52514e" text-anchor="middle">50%</text>
+<line x1="580.0" y1="102" x2="580.0" y2="420" stroke="#e4e3df" stroke-width="1"/>
+<text x="580.0" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#52514e" text-anchor="middle">75%</text>
+<line x1="690.0" y1="102" x2="690.0" y2="420" stroke="#e4e3df" stroke-width="1"/>
+<text x="690.0" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#52514e" text-anchor="middle">100%</text>
+<text x="236" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Bakery: must it register?</text>
+<path d="M250,108 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,118 h348.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-348.0 z" fill="#eb6834"/>
+<path d="M250,128 h377.3 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-377.3 z" fill="#1baf7a"/>
+<text x="236" y="166" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Access and deletion deadlines</text>
+<path d="M250,148 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,158 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#eb6834"/>
+<path d="M250,168 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#1baf7a"/>
+<text x="236" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Digital lender data breach</text>
+<path d="M250,188 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,198 h318.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-318.7 z" fill="#eb6834"/>
+<path d="M250,208 h289.3 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-289.3 z" fill="#1baf7a"/>
+<text x="236" y="246" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Telemedicine hosted abroad</text>
+<path d="M250,228 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,238 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#eb6834"/>
+<path d="M250,248 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#1baf7a"/>
+<text x="236" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Marketing with sensitive data</text>
+<path d="M250,268 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,278 h260.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-260.0 z" fill="#eb6834"/>
+<path d="M250,288 h318.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-318.7 z" fill="#1baf7a"/>
+<text x="236" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">School app code check</text>
+<path d="M250,308 h436.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-436.0 z" fill="#2a78d6"/>
+<path d="M250,318 h362.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-362.7 z" fill="#eb6834"/>
+<path d="M250,328 h417.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-417.7 z" fill="#1baf7a"/>
+<text x="236" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Exempt startup's paperwork</text>
+<path d="M250,348 h406.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-406.7 z" fill="#2a78d6"/>
+<path d="M250,358 h260.0 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-260.0 z" fill="#eb6834"/>
+<path d="M250,368 h318.7 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-318.7 z" fill="#1baf7a"/>
+<text x="236" y="406" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#0b0b0b" text-anchor="end">Mall facial recognition</text>
+<path d="M250,388 h411.6 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-411.6 z" fill="#2a78d6"/>
+<path d="M250,398 h289.3 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-289.3 z" fill="#eb6834"/>
+<path d="M250,408 h338.2 a4,4 0 0 1 4,4 v0.0 a4,4 0 0 1 -4,4 h-338.2 z" fill="#1baf7a"/>
+</svg>

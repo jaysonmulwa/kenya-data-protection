@@ -1,0 +1,114 @@
+{
+  "registration-12-staff-under-5m": {
+    "with_skill": {
+      "passed": 15,
+      "total": 15
+    },
+    "without_skill": {
+      "passed": 12,
+      "total": 15
+    },
+    "with_web": {
+      "passed": 13,
+      "total": 15
+    }
+  },
+  "access-and-erasure-deadlines": {
+    "with_skill": {
+      "passed": 12,
+      "total": 12
+    },
+    "without_skill": {
+      "passed": 12,
+      "total": 12
+    },
+    "with_web": {
+      "passed": 12,
+      "total": 12
+    }
+  },
+  "breach-digital-lender": {
+    "with_skill": {
+      "passed": 15,
+      "total": 15
+    },
+    "without_skill": {
+      "passed": 11,
+      "total": 15
+    },
+    "with_web": {
+      "passed": 10,
+      "total": 15
+    }
+  },
+  "telemedicine-hosting-abroad": {
+    "with_skill": {
+      "passed": 12,
+      "total": 12
+    },
+    "without_skill": {
+      "passed": 12,
+      "total": 12
+    },
+    "with_web": {
+      "passed": 12,
+      "total": 12
+    }
+  },
+  "wedding-marketing-sensitive-data": {
+    "with_skill": {
+      "passed": 15,
+      "total": 15
+    },
+    "without_skill": {
+      "passed": 9,
+      "total": 15
+    },
+    "with_web": {
+      "passed": 11,
+      "total": 15
+    }
+  },
+  "school-parent-app-repo-check": {
+    "with_skill": {
+      "passed": 24,
+      "total": 24
+    },
+    "without_skill": {
+      "passed": 20,
+      "total": 24
+    },
+    "with_web": {
+      "passed": 23,
+      "total": 24
+    }
+  },
+  "exempt-startup-still-needs-policy": {
+    "with_skill": {
+      "passed": 14,
+      "total": 15
+    },
+    "without_skill": {
+      "passed": 9,
+      "total": 15
+    },
+    "with_web": {
+      "passed": 11,
+      "total": 15
+    }
+  },
+  "mall-cctv-facial-recognition": {
+    "with_skill": {
+      "passed": 17,
+      "total": 18
+    },
+    "without_skill": {
+      "passed": 12,
+      "total": 18
+    },
+    "with_web": {
+      "passed": 14,
+      "total": 18
+    }
+  }
+}

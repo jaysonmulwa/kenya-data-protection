@@ -167,6 +167,10 @@ def summarise(jobs):
     print("\n| Eval | " + " | ".join(cols) + " |\n|---|" + "---|" * len(cols))
     for name, r in rows.items():
         print(f"| {name} | " + " | ".join(fmt(r[k]) for k in cols) + " |")
+    # Machine-readable copy for scripts/render_eval_charts.py.
+    out = {name: {k: {"passed": sum(x[0] for x in r[k]), "total": sum(x[1] for x in r[k])} for k in cols}
+           for name, r in rows.items()}
+    (jobs[0][2].parents[2] / "results.json").write_text(json.dumps(out, indent=2) + "\n")
     for c in cols:
         allruns = [x for r in rows.values() for x in r[c]]
         rates = [x[0] / x[1] for x in allruns]
