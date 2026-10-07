@@ -8,7 +8,7 @@ For each kind of personal data, record:
 - what it is;
 - whether it's sensitive (`law.md` §5);
 - whose it is (players, customers, staff, children);
-- why it's collected and on what lawful basis (§2);
+- why it's collected and on what lawful basis (§2), and for sensitive data, which s.45 ground applies (§5);
 - where it's stored, and every processor that touches it;
 - whether any of it leaves Kenya (§12);
 - how long it's kept, and what happens then (§8).
@@ -34,6 +34,12 @@ The notice, shown before collection, says:
 
 - [ ] A written policy on how personal data is handled, published (usually on the website) and reviewed regularly. Required for everyone, registered or not.
 - [ ] It covers: data held, how to use rights, complaints, purposes, transfers abroad and to third parties, retention, and children's data.
+
+## Sensitive data (s.44–46)
+
+- [ ] Each use of sensitive data has a s.45 ground named: a not-for-profit body's own members, data the person made public, or necessity for a legal claim, legal obligations or rights, or vital interests (`law.md` §5).
+- [ ] Nothing sensitive rests on legitimate interests alone. Where only consent fits, it's flagged for the ODPC or a lawyer.
+- [ ] Health data is handled by or under a health care provider, or someone with a legal duty of secrecy or confidentiality (s.46).
 
 ## Consent, where it's the lawful basis (s.32, 33, 37)
 

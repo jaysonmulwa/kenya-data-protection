@@ -8,7 +8,7 @@ From the official texts on Kenya Law, as revised to 31 December 2022 (read Octob
 2. Principles, lawful basis and consent (Act s.25, 30, 32)
 3. Duty to notify and data protection policy (Act s.29; General Regulations reg 23)
 4. Children (Act s.33)
-5. Sensitive personal data (Act s.2)
+5. Sensitive personal data and its grounds (Act s.2, 44–46; General Regulations reg 55–57)
 6. Data subjects' rights and deadlines (Act s.26, 38, 40; General Regulations)
 7. Commercial use and direct marketing (Act s.37; General Regulations reg 14–18)
 8. Retention (Act s.39; General Regulations reg 19)
@@ -110,7 +110,28 @@ A website privacy policy can serve as this policy if it covers these points. The
 
 Data revealing a person's race, health status, ethnic social origin, conscience, belief, genetic data, biometric data, **property details, marital status, family details including names of the person's children, parents, spouse or spouses**, sex or sexual orientation.
 
-Sensitive data abroad needs the data subject's consent and confirmed safeguards (s.49). Processing sensitive data is high-risk for DPIA purposes.
+The list is of the person's own family: a next-of-kin field is sensitive when the person named is a child, parent or spouse, which is common, but a sibling or friend isn't on the list.
+
+Sensitive data abroad needs the data subject's consent and confirmed safeguards (s.49). Processing sensitive data is high-risk for DPIA purposes (reg 49).
+
+### Grounds for processing sensitive data (s.44–46)
+
+A s.30 lawful basis is not enough on its own:
+- **s.44:** sensitive data may be processed only where the s.25 principles are met.
+- **s.45:** and only on one of these grounds:
+  - (a) a not-for-profit body with a political, philosophical, religious or trade union aim, acting with safeguards, about its own members or regular contacts, and not disclosing the data outside the body without consent;
+  - (b) the person has manifestly made the data public;
+  - (c) the processing is necessary for: (i) a legal claim; (ii) carrying out obligations or exercising specific rights of the controller or the data subject; or (iii) the vital interests of a person who can't give consent.
+- **Neither consent nor legitimate interests is on the s.45 list.** So "legitimate interests" alone does not justify processing biometric, health or other sensitive data. Whether consent alone is enough is not settled by the text, though the Act requires consent for sensitive data in other places (for example s.49 transfers). For each use of sensitive data, name the s.45 ground. If only consent or legitimate interests fits, flag it as a question for the ODPC or a lawyer.
+- **Health data (s.46):** only by or under the responsibility of a health care provider, or by someone under a legal duty of professional secrecy. The condition is also met where the processing is necessary for public health reasons, or is done by someone who owes a legal duty of confidentiality.
+
+### Public-interest exemption (s.51(2)(b); General Regulations reg 55–57)
+
+Processing is exempt from the Act on public-interest grounds in a "permitted general situation" or a "permitted health situation".
+- **Permitted general situations (reg 56):** lessening or preventing a serious threat to life, health or safety, or to public health or safety; taking appropriate action on suspected unlawful activity or serious misconduct; locating a missing person; asserting a legal or equitable claim; alternative dispute resolution; diplomatic or consular duties.
+- **Permitted health situations (reg 57):** collecting health information to provide a health service; health research; using genetic information obtained in providing a health service; and, under conditions, disclosing health information to a person responsible for someone who can't consent.
+
+Read these narrowly. A security system might argue "action on suspected unlawful activity", but an always-on scan of every visitor is far wider than acting on a suspicion, so don't rely on this exemption without asking the ODPC.
 
 ## 6. Data subjects' rights and deadlines
 
