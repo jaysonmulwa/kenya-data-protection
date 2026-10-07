@@ -1,0 +1,53 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Pupil {
+  id               Int        @id @default(autoincrement())
+  admissionNumber  String     @unique
+  firstName        String
+  lastName         String
+  dateOfBirth      DateTime
+  gender           String
+  grade            String
+  religion         String?
+  bloodGroup       String?
+  allergies        String?
+  medicalNotes     String?
+  photoUrl         String?
+  guardians        Guardian[]
+  reports          TermReport[]
+}
+
+model Guardian {
+  id               Int      @id @default(autoincrement())
+  fullName         String
+  nationalIdNumber String
+  phone            String
+  email            String?
+  relationship     String   // mother, father, guardian
+  maritalStatus    String?
+  passwordHash     String
+  pupils           Pupil[]
+  payments         FeePayment[]
+}
+
+model TermReport {
+  id        Int    @id @default(autoincrement())
+  pupilId   Int
+  term      String
+  marks     Json
+  remarks   String
+  pupil     Pupil  @relation(fields: [pupilId], references: [id])
+}
+
+model FeePayment {
+  id           Int      @id @default(autoincrement())
+  guardianId   Int
+  mpesaReceipt String
+  amount       Int
+  phone        String
+  paidAt       DateTime @default(now())
+  guardian     Guardian @relation(fields: [guardianId], references: [id])
+}

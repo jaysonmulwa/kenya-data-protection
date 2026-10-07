@@ -1,0 +1,121 @@
+{
+  "skill_name": "kenya-data-protection",
+  "evals": [
+    {
+      "id": 1,
+      "name": "registration-12-staff-under-5m",
+      "prompt": "We run a small Nairobi bakery with 2 shops. 12 employees, about KES 3.2 million revenue last year. We keep a customer WhatsApp list and loyalty cards with names and phone numbers. Do we have to register with the Data Commissioner? If yes, how much does it cost and how long does it last?",
+      "expected_output": "Must register: the exemption needs BOTH revenue under KES 5M AND fewer than 10 employees. KES 4,000 fee, KES 2,000 renewal, valid 24 months. Duties apply anyway.",
+      "files": [],
+      "expectations": [
+        "Concludes the bakery must register, because the exemption needs both revenue below KES 5 million and fewer than 10 employees, and 12 employees fails that test",
+        "Gives the registration fee as KES 4,000",
+        "Gives the renewal fee as KES 2,000",
+        "States the registration certificate is valid for 24 months (2 years)",
+        "Says the Act's duties (such as telling customers how their data is used, or consent for marketing messages) apply whether or not registration is required"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "access-and-erasure-deadlines",
+      "prompt": "I run a Kenyan HR software startup. Today one user emailed asking for a copy of all the data we hold on them, and another asked us to delete their account. How many days do we have to respond to each, and can we charge a fee?",
+      "expected_output": "Access within 7 days, free. Erasure: respond within 14 days.",
+      "files": [],
+      "expectations": [
+        "States the deadline for the access request as 7 days",
+        "States that complying with an access request is free of charge",
+        "States the deadline to respond to the erasure request as 14 days",
+        "Does not present a one-month or 30-day deadline as the Kenyan deadline for the access request"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "breach-digital-lender",
+      "prompt": "We're a Kenyan digital lending app. Last night we found our users table dumped on a hacking forum: about 40,000 rows with full names, national ID numbers, phone numbers and bcrypt password hashes. What exactly do we have to do under Kenyan law, and by when? What's our maximum fine exposure?",
+      "expected_output": "Notify ODPC within 72 hours of awareness; notifiable under reg 37 (ID number with other data / account identifier with password); tell users in writing; max admin fine KES 5M or 1% of turnover, whichever is lower.",
+      "files": [],
+      "expectations": [
+        "States the ODPC must be notified within 72 hours of becoming aware of the breach",
+        "Explains why this breach is notifiable using the regulation's specific criteria (a name or ID number together with other personal data, or an account identifier together with a password or access credential), not only a general 'risk of harm' test",
+        "Says affected users must be told in writing within a reasonably practical time",
+        "States the maximum administrative fine as KES 5 million or 1% of the previous year's turnover, whichever is LOWER",
+        "Mentions that a digital lender (provision of financial services) must be registered with the ODPC regardless of size"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "telemedicine-hosting-abroad",
+      "prompt": "We're building a telemedicine app for Kenyan patients: primary care video consultations with Kenyan doctors. We want to host everything on AWS in eu-west-1 (Ireland) because that's where our team's other stuff is. Any Kenyan data protection problem with that?",
+      "expected_output": "Reg 26: primary health care needs a server/data centre in Kenya or at least one serving copy in Kenya. Health data is sensitive: s.49 consent + safeguards abroad. Must register (patient care). DPIA needed.",
+      "files": [],
+      "expectations": [
+        "States that processing for primary health care must use a server or data centre in Kenya, or keep at least one serving copy of the data in Kenya, so Ireland-only hosting does not comply",
+        "Identifies health data as sensitive personal data and says sending it outside Kenya needs the patient's consent plus safeguards",
+        "Says the business must register with the ODPC regardless of size because health administration or patient care is a mandatory purpose",
+        "Says a data protection impact assessment is required before processing"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "wedding-marketing-sensitive-data",
+      "prompt": "Our Nairobi wedding planning startup has a database of past clients: couples' names, phone numbers, marital status, parents' names and their wedding budget. We want to send SMS promotions for our partner hotels' honeymoon packages, and maybe share the list with the hotels. What do we need to do under Kenyan law?",
+      "expected_output": "Marital status and parents' names are sensitive in Kenya; express consent for commercial use (s.37); sensitive data can't be used for direct marketing (reg 15(1)); opt-out in each message; sharing with hotels needs consent; stop sharing within 7 days on request.",
+      "files": [],
+      "expectations": [
+        "Identifies marital status and parents' names (family details) as sensitive personal data under Kenyan law",
+        "Says using the data for marketing or other commercial purposes needs the clients' express consent",
+        "States that sensitive personal data (such as marital status or family details) may not be used for direct marketing, even with consent",
+        "Says each marketing message needs a simple way to opt out",
+        "States that a request to stop sharing data for a third party's direct marketing must be acted on within 7 days"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "school-parent-app-repo-check",
+      "prompt": "Can you check our school's parent app against Kenya's Data Protection Act? The code is at C:/Users/Lenovo/Documents/kenya-data-protection/evals/files/acorns-parent-app. Tell me what we need to fix before the new term.",
+      "expected_output": "Must register (educational institution) despite being under thresholds; reg 26 local copy needed (basic education) but hosted in eu-west-1; parental consent + age verification; health/marital data sensitive; processors need contracts; no privacy notice; DPIA.",
+      "files": [
+        "evals/files/acorns-parent-app/"
+      ],
+      "expectations": [
+        "Concludes the school must register with the ODPC even though it is under both size thresholds, because operating an educational institution is a mandatory registration purpose",
+        "Flags that hosting only in AWS eu-west-1 breaks the rule that early childhood and basic education data needs a server in Kenya or a serving copy stored in Kenya",
+        "Requires parent or guardian consent for processing pupils' data",
+        "Identifies the pupils' health fields (allergies, medical notes or blood group) and the guardians' marital status as sensitive personal data",
+        "Names at least three of the third-party services in the code (Mixpanel, Firebase, Sentry, Africa's Talking, AWS) and says each needs a written processing contract",
+        "Notes there is no privacy notice and the sign-up form collects data without one",
+        "Says a data protection impact assessment is required",
+        "Questions whether collecting guardians' marital status or national ID numbers is necessary (data minimisation)"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "exempt-startup-still-needs-policy",
+      "prompt": "We're a 4-person Nairobi startup with a recipe and meal-planning app. Revenue last year was about KES 1.5 million. Users sign up with name and email, save recipes, and we send a weekly newsletter. A lawyer friend says we're exempt from ODPC registration, so we don't need any privacy paperwork yet. Is that right?",
+      "expected_output": "Exempt from registration (both thresholds met, no mandatory purpose), but Part IV duties still apply: published data protection policy (reg 23), s.29 notice, newsletter consent and opt-out.",
+      "files": [],
+      "expectations": [
+        "Agrees the startup is probably exempt from registration, because revenue is below KES 5 million, it has fewer than 10 employees, and a recipe app is not a mandatory-registration purpose",
+        "Says the 'no paperwork' conclusion is wrong because the Act's duties apply even to organisations exempt from registration",
+        "States that every data controller must develop, publish and keep updated a data protection policy (General Regulations reg 23)",
+        "Says users must be told at sign-up what is collected, why, and their rights (the s.29 duty to notify)",
+        "Says the newsletter needs consent and an opt-out in every message"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "mall-cctv-facial-recognition",
+      "prompt": "We manage a shopping mall in Westlands, Nairobi. We want to upgrade our CCTV to add facial recognition, to spot known shoplifters and count repeat visitors. What do we need to do under Kenya's data protection law before switching it on?",
+      "expected_output": "DPIA before switching on (large-scale monitoring of a public area; biometric data); face data is biometric = sensitive; registration mandatory (security CCTV / crime prevention); consult ODPC if high risk (60 days); notice to people.",
+      "files": [],
+      "expectations": [
+        "Says a data protection impact assessment is required before switching it on",
+        "Gives large-scale systematic monitoring of a publicly accessible area as a reason the DPIA is required (not only biometric data)",
+        "Identifies facial recognition data as biometric data, which is sensitive personal data under Kenyan law",
+        "Says registration with the ODPC is mandatory regardless of size, because operating a security CCTV system (crime prevention) is a mandatory-registration purpose",
+        "Says that if the DPIA shows high risk, the ODPC must be consulted before processing, and that the ODPC has 60 days to respond",
+        "Says shoppers must be told about the processing before it happens, for example through clear signs at entrances"
+      ]
+    }
+  ]
+}
