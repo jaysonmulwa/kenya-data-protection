@@ -3,7 +3,7 @@
 A Claude skill that checks a product, business or codebase against Kenya's Data Protection Act 2019 and the Office of the Data Protection Commissioner's regulations. It tells you:
 
 - whether you must register with the ODPC as a data controller or processor, and the fee;
-- what your privacy notice, consent, children's data, retention, processor contracts, transfers abroad and breach plan are missing;
+- what your privacy notice, published policy, consent, sensitive data, children's data, marketing, retention, processor contracts, transfers abroad, impact assessments and breach plan are missing;
 - what to do next, and what to ask the ODPC or a lawyer.
 
 It works from the official texts, with section numbers: the Act, and the Registration and General Regulations 2021, as revised to 31 December 2022. Check for later changes before relying on a figure. **It is not legal advice.**
@@ -50,9 +50,12 @@ Eight realistic questions, each answered 3 times by Claude Opus 5.5 in three set
 | | With skill | Plain model | Plain model + ODPC web research |
 |---|---|---|---|
 | **Checks passed (of 126)** | **124 (98.4%)** | 97 (77.0%) | 106 (84.1%) |
-| Per-run pass rate, mean ± sd | 98.8% ± 4.2% | 77.9% ± 16.9% | 84.2% ± 14.8% |
-| Average time per answer | 51 s | 42 s | 122 s |
-| Average cost per answer | $0.27 | $0.13 | $0.97 |
+| Per-run pass rate, mean ± sd | 98.5% ± 5.2% | 77.9% ± 16.9% | 84.2% ± 14.8% |
+| Average time per answer | 52 s | 42 s | 122 s |
+| Average cost per answer | $0.28 | $0.13 | $0.97 |
+| Extra legal errors flagged by the grader* | 11 | 17 | 14 |
+
+\* Wrong claims the 42 checks don't cover. I checked the 11 with-skill flags against the official texts: 2 were the grader's own mistakes, and the rest are small slips in single answers. The other setups' flags weren't checked.
 
 | Question | With skill | Plain model | Plain + ODPC web |
 |---|---|---|---|
@@ -61,8 +64,8 @@ Eight realistic questions, each answered 3 times by Claude Opus 5.5 in three set
 | Digital lender data breach | 15/15 | 11/15 | 10/15 |
 | Telemedicine app hosted in Ireland | 12/12 | 12/12 | 12/12 |
 | Wedding client list used for marketing | 15/15 | 9/15 | 11/15 |
-| School parent app code check | 23/24 | 20/24 | 23/24 |
-| Exempt startup: any paperwork needed? | 15/15 | 9/15 | 11/15 |
+| School parent app code check | 24/24 | 20/24 | 23/24 |
+| Exempt startup: any paperwork needed? | 14/15 | 9/15 | 11/15 |
 | Mall adding facial recognition to CCTV | 17/18 | 12/18 | 14/18 |
 
 **Checks the plain model failed in all 3 runs:**

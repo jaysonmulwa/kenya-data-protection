@@ -23,13 +23,13 @@ The with-skill answers are from the final skill version, the one in this repo. T
 | | With skill | Plain model | Plain model + ODPC web |
 |---|---|---|---|
 | **Checks passed (126 = 42 × 3)** | **124 (98.4%)** | 97 (77.0%) | 106 (84.1%) |
-| Per-run pass rate, mean ± sd | 98.8% ± 4.2% | 77.9% ± 16.9% | 84.2% ± 14.8% |
-| Average time per answer | 51 s | 42 s | 122 s |
-| Average tokens per answer | 63k | 15k | 222k |
-| Average cost per answer | $0.27 | $0.13 | $0.97 |
-| Extra legal errors flagged by the grader* | 17 | 17 | 14 |
+| Per-run pass rate, mean ± sd | 98.5% ± 5.2% | 77.9% ± 16.9% | 84.2% ± 14.8% |
+| Average time per answer | 52 s | 42 s | 122 s |
+| Average tokens per answer | 62k | 15k | 222k |
+| Average cost per answer | $0.28 | $0.13 | $0.97 |
+| Extra legal errors flagged by the grader* | 11 | 17 | 14 |
 
-\* Wrong claims the checks don't cover, as flagged by the grader. I checked the 17 with-skill flags against the official texts: 8 were the grader's own mistakes (it denied the reg 15(4) KES 20,000 penalty, the reg 51(3) 60-day deemed approval, and that a DPO is optional under s.24). The real ones are listed under "Where the skill still falls short". The other setups' flags weren't checked.
+\* Wrong claims the checks don't cover, as flagged by the grader. I checked the 11 with-skill flags against the official texts: 2 were the grader's own mistakes (it denied the reg 51(3) 60-day deemed approval, and that processing sensitive data is on the reg 49 high-risk list). The rest are minor imprecisions, listed under "Where the skill still falls short". The other setups' flags weren't checked.
 
 ## By question
 
@@ -40,8 +40,8 @@ The with-skill answers are from the final skill version, the one in this repo. T
 | Digital lender data breach | 15/15 | 11/15 | 10/15 |
 | Telemedicine app hosted in Ireland | 12/12 | 12/12 | 12/12 |
 | Wedding client list used for marketing | 15/15 | 9/15 | 11/15 |
-| School parent app code check | 23/24 | 20/24 | 23/24 |
-| Exempt startup: any paperwork needed? | 15/15 | 9/15 | 11/15 |
+| School parent app code check | 24/24 | 20/24 | 23/24 |
+| Exempt startup: any paperwork needed? | 14/15 | 9/15 | 11/15 |
 | Mall adding facial recognition to CCTV | 17/18 | 12/18 | 14/18 |
 | **Total** | **124/126** | **97/126** | **106/126** |
 
@@ -76,7 +76,7 @@ Each cell is how many of the 3 runs passed.
 | Wedding | Stop sharing for third-party marketing within 7 days (reg 18) | 3/3 | **0/3** | **0/3** |
 | School app | Must register although under both thresholds (education) | 3/3 | 3/3 | 3/3 |
 | School app | Ireland-only hosting breaks reg 26 for basic education | 3/3 | 1/3 | 3/3 |
-| School app | Parent or guardian consent for pupils' data | 2/3 | 3/3 | 2/3 |
+| School app | Parent or guardian consent for pupils' data | 3/3 | 3/3 | 2/3 |
 | School app | Pupils' health fields and guardians' marital status are sensitive | 3/3 | 2/3 | 3/3 |
 | School app | Names 3+ third-party services; each needs a written contract | 3/3 | 3/3 | 3/3 |
 | School app | No privacy notice at sign-up | 3/3 | 3/3 | 3/3 |
@@ -86,7 +86,7 @@ Each cell is how many of the 3 runs passed.
 | Startup | Duties still apply when exempt | 3/3 | 3/3 | 3/3 |
 | Startup | Must publish and update a data protection policy (reg 23) | 3/3 | **0/3** | **0/3** |
 | Startup | Tell users at sign-up what, why, and their rights (s.29) | 3/3 | 1/3 | 2/3 |
-| Startup | Newsletter needs consent and an opt-out in every message | 3/3 | 2/3 | 3/3 |
+| Startup | Newsletter needs consent and an opt-out in every message | 2/3 | 2/3 | 3/3 |
 | Mall | DPIA before switching on | 3/3 | 3/3 | 3/3 |
 | Mall | Large-scale monitoring of a public area is a DPIA trigger | 2/3 | 3/3 | 2/3 |
 | Mall | Facial recognition data is biometric, so sensitive | 3/3 | 3/3 | 3/3 |
@@ -96,24 +96,29 @@ Each cell is how many of the 3 runs passed.
 
 ## What this shows
 
-- **The skill adds about 21 points over the plain model and 14 over the plain model with ODPC web research.** It is also the most consistent setup: its per-run spread is a quarter of the others'.
+- **The skill adds about 21 points over the plain model and 14 over the plain model with ODPC web research.** It is also the most consistent setup: its per-run spread is about a third of the others'.
 - **Web research closes some gaps but not others.** Reading the ODPC site fixed the registration lists (security CCTV), local hosting for schools and the reg 15 ban on sensitive data in marketing. It never found the reg 23 published-policy duty, the 7-day third-party marketing deadline or reg 37's breach tests. Those sit in the regulations' fine print, and the ODPC site isn't laid out to surface them.
 - **Web research costs most.** It took more than twice as long as the skill and cost about 3.5 times as much per answer.
 - **The plain model is strong on headline rules.** All three setups tie on the 72 hours, the deadlines for requests, the fine cap and local hosting for health care.
 
 ### Where the skill still falls short
 
-The two missed checks (school consent 2/3, mall monitoring trigger 2/3) are single misses, within run-to-run noise. The grader's extra flags point to two real gaps:
+The two missed checks are single misses, within run-to-run noise: one startup answer hedged on whether a newsletter counts as marketing, and one mall answer didn't name public-area monitoring as a DPIA trigger. The grader's remaining flags are minor imprecisions in individual answers:
 
-- **Grounds for sensitive data (s.44–46).** For the mall's shoplifter watchlist, answers relied on "legitimate interests" alone. Biometric data is sensitive, so it also needs one of the specific grounds the Act sets for sensitive data. The skill doesn't cover these grounds yet.
-- **Loose wording that answers repeat.** Answers sometimes cited the mandatory-registration list as "Act s.18, Third Schedule" (it's the Registration Regulations' schedule), and called any next-of-kin field sensitive (only names of a child, parent or spouse are).
+- Saying a processor "must" report within 48 hours, where s.43 says "without delay and, where reasonably practicable, within 48 hours".
+- Treating a leaked name plus ID number as notifiable on its own. Reg 37 needs them together with one of the listed kinds of data.
+- Giving the s.73 fine without the possible prison term, and describing reg 26 as covering primary schools when it covers all basic education.
+- Listing only the s.45 grounds that fit, as if they were the full list.
+
+None of the 42 checks tests the s.45 grounds for sensitive data, which the final version added. Their effect shows in the flags: with-skill answers now name the s.45 ground for a face-scan watchlist instead of relying on legitimate interests, and the flags fell from 17 to 11.
 
 ### How the skill improved between rounds
 
 | Skill version | Checks passed |
 |---|---|
 | After the reg 15, reg 23, DPIA-list and s.31(5) fixes | 119/126 |
-| Final: gaps written so the reader can act on them (spell out s.29, name sensitive fields, both DPIA steps) | **124/126** |
+| Gaps written so the reader can act on them (spell out s.29, name sensitive fields, both DPIA steps) | 124/126 |
+| Final: s.44–46 grounds for sensitive data, reg 55–57 exemption, citation and next-of-kin wording | **124/126**, grader flags 17 → 11 |
 
 ## Rerun
 
