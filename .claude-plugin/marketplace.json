@@ -3,6 +3,9 @@
   "owner": {
     "name": "Jayson Mulwa"
   },
+  "metadata": {
+    "description": "Kenya data protection compliance for Claude: checks a business or codebase against the Data Protection Act 2019 and ODPC regulations."
+  },
   "plugins": [
     {
       "name": "kenya-data-protection",
