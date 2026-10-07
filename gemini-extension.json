@@ -1,0 +1,6 @@
+{
+  "name": "kenya-data-protection",
+  "version": "0.2.0",
+  "description": "Checks a product, business or codebase against Kenya's Data Protection Act 2019 and the ODPC regulations: whether to register, and what to fix.",
+  "contextFileName": "AGENTS.md"
+}

@@ -15,5 +15,7 @@
     "odpc",
     "privacy",
     "compliance"
-  ]
+  ],
+  "skills": "./skills/",
+  "rules": "./.qoder/rules/"
 }

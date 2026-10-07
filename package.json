@@ -1,0 +1,38 @@
+{
+  "name": "kenya-data-protection",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Checks a product, business or codebase against Kenya's Data Protection Act 2019 and the ODPC regulations: whether to register, and what to fix.",
+  "keywords": [
+    "kenya",
+    "data-protection",
+    "odpc",
+    "privacy",
+    "compliance",
+    "pi-package",
+    "skills"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Jayson Mulwa",
+    "url": "https://github.com/jaysonmulwa"
+  },
+  "homepage": "https://github.com/jaysonmulwa/kenya-data-protection",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaysonmulwa/kenya-data-protection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaysonmulwa/kenya-data-protection/issues"
+  },
+  "files": [
+    "AGENTS.md",
+    "skills/",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}

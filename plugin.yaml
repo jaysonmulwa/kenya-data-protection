@@ -1,0 +1,6 @@
+name: kenya-data-protection
+version: 0.2.0
+description: Kenya Data Protection Act and ODPC compliance checks for Hermes Agent, as a bundled skill.
+author: Jayson Mulwa
+provides_skills:
+  - kenya-data-protection

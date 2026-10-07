@@ -1,0 +1,21 @@
+{
+  "name": "kenya-data-protection",
+  "interface": {
+    "displayName": "Kenya Data Protection"
+  },
+  "plugins": [
+    {
+      "name": "kenya-data-protection",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/jaysonmulwa/kenya-data-protection.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
