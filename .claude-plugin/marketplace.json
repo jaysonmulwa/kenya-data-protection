@@ -1,0 +1,12 @@
+{
+  "name": "kenya-data-protection-marketplace",
+  "owner": {
+    "name": "Jayson Mulwa"
+  },
+  "plugins": [
+    {
+      "name": "kenya-data-protection",
+      "source": "./"
+    }
+  ]
+}

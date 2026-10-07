@@ -1,0 +1,9 @@
+{
+  "name": "kenya-data-protection",
+  "description": "Checks a product or business against Kenya's Data Protection Act 2019 and the ODPC regulations: whether to register, and what to fix.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Jayson Mulwa"
+  }
+}
